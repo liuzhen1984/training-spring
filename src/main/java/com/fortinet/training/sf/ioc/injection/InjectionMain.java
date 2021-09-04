@@ -11,7 +11,7 @@ public class InjectionMain {
         //step 1
 //        BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-injection-context.xml");
         //step 2
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-injection-context.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-injection-context.xml");
 
 
         System.out.println(applicationContext.getBean("userDao"));
@@ -25,10 +25,10 @@ public class InjectionMain {
     }
 
 //    private static void iocContainer(UserDao userDao,BeanFactory beanFactory){
-    private static void iocContainer(UserDao userDao,ApplicationContext applicationContext){
+    private static void iocContainer(UserDao userDao,ClassPathXmlApplicationContext applicationContext){
         System.out.println(userDao.getBeanFactory()==applicationContext);
         System.out.println(userDao.getBeanFactory());
-        System.out.println(applicationContext);
+        System.out.println(applicationContext.getBeanFactory());
     }
 
 }

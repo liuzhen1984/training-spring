@@ -14,34 +14,33 @@ import java.util.Map;
 public class AnnotationAppContextIoCContainerDemo {
     public static void main(String[] args){
         // step 1
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
-        applicationContext.register(AnnotationAppContextIoCContainerDemo.class);
-        lookupByCollectionType(applicationContext);
+//        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
+//        applicationContext.register(AnnotationAppContextIoCContainerDemo.class);
+//        lookupByCollectionType(applicationContext);
 
         //step2
 //        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();
 
-
-//        applicationContext.register(AnnotationAppContextIoCContainerDemo.class);
-//        //Start application context
-//        applicationContext.refresh();
-//        lookupByCollectionType(applicationContext);
+        DemoApplicationContext applicationContext = new DemoApplicationContext();
+        applicationContext.register(AnnotationAppContextIoCContainerDemo.class);
+        //Start application context
+        applicationContext.refresh();
+        lookupByCollectionType(applicationContext);
 //
 //        //step 4
-//        applicationContext.close();
+        applicationContext.close();
 
         //step 5
-//        DemoApplicationContext applicationContext = new DemoApplicationContext();
     }
 
 //step3
-//    @Bean
-//    public User user(){
-//        User user = new User();
-//        user.setId(100l);
-//        user.setName("casb");
-//        return user;
-//    }
+    @Bean
+    public User user(){
+        User user = new User();
+        user.setId(100l);
+        user.setName("casb");
+        return user;
+    }
 
     private static void lookupByCollectionType(BeanFactory beanFactory) {
         if(beanFactory instanceof ListableBeanFactory){
