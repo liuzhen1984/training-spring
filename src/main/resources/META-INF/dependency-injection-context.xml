@@ -6,6 +6,7 @@
         http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
     <import resource="dependency-lookup-context.xml" />
+    <alias name="user" alias="testUser"/>
 
     <!--auto wiring  disorderly-->
 <!--    <bean id="userDao" class="com.fortinet.training.sf.ioc.repositry.UserDao" autowire="byType">-->
