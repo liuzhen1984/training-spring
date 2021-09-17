@@ -20,8 +20,8 @@ public class JavaAPIBeanDefinitionDemo1 {
         Map<String,Object> userMap = new HashMap<>();
         userMap.put("id",123L);
         userMap.put("name","naming");
-        registryBeanDefinitionByNaming(applicationContext,User.class,"user",userMap);
-        System.out.println(applicationContext.getBean("user"));
+//        registryBeanDefinitionByNaming(applicationContext,User.class,"user-liuzhen",userMap);
+//        System.out.println(applicationContext.getBean("user-liuzhen"));
         userMap.put("name","non-naming");
         registryBeanDefinitionByNonnaming(applicationContext,User.class,userMap);
         System.out.println("User all type beans: "+applicationContext.getBeansOfType(User.class));

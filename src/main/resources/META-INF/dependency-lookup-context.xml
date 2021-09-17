@@ -16,7 +16,7 @@
     </bean>
     <bean id="user" class="com.fortinet.training.sf.ioc.domian.User" primary="true">
         <property name="id" value="0"/>
-        <property name="name" value="zhen"/>
+        <property name="name" value="zhenAliasDemo"/>
     </bean>
 
     <bean id="lazyUser" class="org.springframework.beans.factory.config.ObjectFactoryCreatingFactoryBean">
