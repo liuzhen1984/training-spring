@@ -5,6 +5,8 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Date;
+
 
 public class InjectionMain {
     public static void main(String[] args){
@@ -21,6 +23,17 @@ public class InjectionMain {
        UserDao userDao =  applicationContext.getBean("userDao",UserDao.class);
 //       iocContainer(userDao,beanFactory);
        iocContainer(userDao,applicationContext);
+
+       System.out.println(new Date().toGMTString());
+       synchronized (userDao){
+           try {
+               userDao.wait(10000L);
+           } catch (InterruptedException e) {
+               e.printStackTrace();
+           }
+           System.out.println(new Date().toGMTString());
+
+       }
 
     }
 

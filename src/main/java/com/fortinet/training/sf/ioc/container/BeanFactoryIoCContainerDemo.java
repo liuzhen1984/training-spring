@@ -1,6 +1,6 @@
 package com.fortinet.training.sf.ioc.container;
 
-import com.fortinet.training.sf.ioc.domian.User;
+import com.fortinet.training.sf.domian.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;

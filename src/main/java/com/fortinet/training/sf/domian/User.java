@@ -1,4 +1,4 @@
-package com.fortinet.training.sf.ioc.domian;
+package com.fortinet.training.sf.domian;
 
 public class User {
     private Long id;
@@ -27,5 +27,11 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+    public static User createUser(){
+        User user= new User();
+        user.setId(1l);
+        user.setName("user instance");
+        return user;
     }
 }

@@ -1,9 +1,8 @@
 package com.fortinet.training.sf.ioc.repositry;
 
-import com.fortinet.training.sf.ioc.domian.User;
+import com.fortinet.training.sf.domian.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
-import org.springframework.context.ApplicationContext;
 
 import java.util.Collection;
 

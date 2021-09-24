@@ -1,7 +1,7 @@
 package com.fortinet.training.sf.ioc.lookup;
 
 import com.fortinet.training.sf.ioc.annotation.Super;
-import com.fortinet.training.sf.ioc.domian.User;
+import com.fortinet.training.sf.domian.User;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;

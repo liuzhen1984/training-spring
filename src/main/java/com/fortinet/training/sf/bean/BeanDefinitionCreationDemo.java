@@ -1,6 +1,6 @@
 package com.fortinet.training.sf.bean;
 
-import com.fortinet.training.sf.ioc.domian.User;
+import com.fortinet.training.sf.domian.User;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

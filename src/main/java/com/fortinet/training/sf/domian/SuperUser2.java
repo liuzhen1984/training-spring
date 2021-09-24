@@ -1,4 +1,4 @@
-package com.fortinet.training.sf.ioc.domian;
+package com.fortinet.training.sf.domian;
 
 import com.fortinet.training.sf.ioc.annotation.Super;
 

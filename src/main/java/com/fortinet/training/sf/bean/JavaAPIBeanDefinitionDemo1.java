@@ -1,11 +1,10 @@
 package com.fortinet.training.sf.bean;
 
-import com.fortinet.training.sf.ioc.domian.User;
+import com.fortinet.training.sf.domian.User;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionReaderUtils;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 
 import java.util.HashMap;
 import java.util.Map;
