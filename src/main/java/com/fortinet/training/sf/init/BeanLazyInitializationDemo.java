@@ -22,8 +22,8 @@ public class BeanLazyInitializationDemo {
     }
 
     @Bean(name = "annotationUserFactory",initMethod = "initFactoryBean")
-//    @Lazy(value = false)
-    @Lazy
+    @Lazy(value = false)
+//    @Lazy
     public InitUserFactory userFactoryBean(){
         return new InitUserFactory();
     }

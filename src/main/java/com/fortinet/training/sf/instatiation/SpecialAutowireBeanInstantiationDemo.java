@@ -15,8 +15,8 @@ public class SpecialAutowireBeanInstantiationDemo {
         ServiceLoader<IUserFactory> serviceLoader =  beanFactory.getBean("user-factory-service-load",ServiceLoader.class);
         display(serviceLoader);
 
-        IUserFactory userFactory = beanFactory.createBean(IUserFactory.class);
-//        IUserFactory userFactory = beanFactory.createBean(Default2UserFactory.class);
+//        IUserFactory userFactory = beanFactory.createBean(IUserFactory.class);
+        IUserFactory userFactory = beanFactory.createBean(Default2UserFactory.class);
         System.out.println(userFactory.createUser());
 
     }

@@ -18,9 +18,9 @@ public class BeanInitializationDemo {
         IUserFactory userFactory = applicationContext.getBean(IUserFactory.class);
         applicationContext.close();
 
-        //Implementation by xml
-//        BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:META-INF/bean-init-context.xml");
-//        IUserFactory userFactory2 = beanFactory.getBean(InitUserFactory.class);
+//        Implementation by xml
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:META-INF/bean-init-context.xml");
+        IUserFactory userFactory2 = beanFactory.getBean(InitUserFactory.class);
     }
 
     @Bean(name = "annotationUserFactory",initMethod = "initFactoryBean")

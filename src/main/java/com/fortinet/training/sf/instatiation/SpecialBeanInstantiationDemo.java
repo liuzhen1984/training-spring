@@ -10,14 +10,14 @@ public class SpecialBeanInstantiationDemo {
     public static void main(String[] args){
         BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:META-INF/bean-special-instantiation-context.xml");
 
-       //1.
+//       //1.
         demoServiceLoader();
-
-        //2.
-        ServiceLoader<IUserFactory> serviceLoader = beanFactory.getBean("user-factory-service-load",ServiceLoader.class);
-        display(serviceLoader);
-
-        //3
+//
+//        //2.
+//        ServiceLoader<IUserFactory> serviceLoader = beanFactory.getBean("user-factory-service-load",ServiceLoader.class);
+//        display(serviceLoader);
+//
+//        //3
 //        IUserFactory userFactory = beanFactory.getBean("user-factory-service",IUserFactory.class);
 //        System.out.println(userFactory.createUser());
     }

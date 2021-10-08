@@ -14,6 +14,7 @@ public class BeanInstantiationDemo {
 
         // 3. factory bean
         User userByFactoryBean = beanFactory.getBean("user-by-factory-bean",User.class);
+
         System.out.println(user);
         System.out.println(userByInstanceMethod);
         System.out.println(userByFactoryBean);
