@@ -13,4 +13,8 @@
 
     <!--FactoryBean instantiation-->
     <bean id="user-by-factory-bean" class="com.fortinet.training.sf.instatiation.UserFactoryBean"/>
+    <bean id="user" class="com.fortinet.training.sf.domian.User">
+        <property name="id" value="1"/>
+        <property name="name" value="zliu"/>
+    </bean>
 </beans>
