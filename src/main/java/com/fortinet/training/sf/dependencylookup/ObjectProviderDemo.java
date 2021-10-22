@@ -6,6 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 
+import java.util.Iterator;
+
 public class ObjectProviderDemo {
     public static void main(String[] args){
         //Implementation by annotation
@@ -28,10 +30,12 @@ public class ObjectProviderDemo {
     }
     private static void lookupByStreamUser(AnnotationConfigApplicationContext applicationContext){
         ObjectProvider<String> strings = applicationContext.getBeanProvider(String.class);
-        for(String string:strings){
-            System.out.println(string);
-        }
-//        strings.stream().forEach(System.out::println);
+        Iterator<String> stringIterable = strings.iterator();
+//        while (stringIterable.hasNext()){
+//            System.out.println(stringIterable.next());
+//        }
+
+        strings.stream().forEach(System.out::println);
     }
 
     @Bean

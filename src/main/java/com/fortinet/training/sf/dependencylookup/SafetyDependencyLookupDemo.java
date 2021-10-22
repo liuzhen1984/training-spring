@@ -23,12 +23,12 @@ public class SafetyDependencyLookupDemo {
 
     }
     private static void displayListableBeanFactoryStreamOps(AnnotationConfigApplicationContext applicationContext){
-        ObjectProvider<String> objectProvider = applicationContext.getBeanProvider(String.class);
+        ObjectProvider<User> objectProvider = applicationContext.getBeanProvider(User.class);
 
         printException("displayListableBeanFactoryStreamOps",()->objectProvider.forEach(System.out::println));
     }
     private static void displayListableBeanFactoryGetBeansOfType(ListableBeanFactory beanFactory){
-        printException("displayListableBeanFactoryGetBeansOfType",()->beanFactory.getBeansOfType(User.class));
+        printException("displayListableBeanFactoryGetBeansOfType",()->System.out.println(beanFactory.getBeansOfType(String.class)));
     }
     private static void displayObjectProviderIfAvailable(AnnotationConfigApplicationContext applicationContext){
         ObjectProvider<User> userObjectProvider = applicationContext.getBeanProvider(User.class);
