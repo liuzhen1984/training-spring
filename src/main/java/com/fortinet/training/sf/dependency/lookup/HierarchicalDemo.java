@@ -1,13 +1,9 @@
-package com.fortinet.training.sf.dependencylookup;
+package com.fortinet.training.sf.dependency.lookup;
 
-import com.fortinet.training.sf.init.BeanInitializationDemo;
-import com.fortinet.training.sf.init.InitUserFactory;
-import com.fortinet.training.sf.instatiation.IUserFactory;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.HierarchicalBeanFactory;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HierarchicalDemo {

@@ -1,4 +1,4 @@
-package com.fortinet.training.sf.dependencylookup;
+package com.fortinet.training.sf.dependency.lookup;
 
 import com.fortinet.training.sf.domian.User;
 import org.springframework.beans.factory.BeanFactory;
