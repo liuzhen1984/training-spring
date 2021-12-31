@@ -1,12 +1,15 @@
 package com.fortinet.training.sf.domian;
 
-import org.springframework.core.io.Resource;
+import java.util.Arrays;
+import java.util.List;
 
-public class User {
+public class UserCollection {
     private Long id;
     private String name;
 
     private City city;
+    private City[] workCities;
+    private List<City> LifeCities;
 
 //    private Resource resource;
 
@@ -34,26 +37,35 @@ public class User {
         this.city = city;
     }
 
-//    public Resource getResource() {
-//        return resource;
-//    }
-//
-//    public void setResource(Resource resource) {
-//        this.resource = resource;
-//    }
+    public City[] getWorkCities() {
+        return workCities;
+    }
+
+    public void setWorkCities(City[] workCities) {
+        this.workCities = workCities;
+    }
+
+    public List<City> getLifeCities() {
+        return LifeCities;
+    }
+
+    public void setLifeCities(List<City> lifeCities) {
+        LifeCities = lifeCities;
+    }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "UserCollection{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", city=" + city +
-//                ", resource=" + resource +
+                ", workCities=" + Arrays.toString(workCities) +
+                ", LifeCities=" + LifeCities +
                 '}';
     }
 
-    public static User createUser(){
-        User user= new User();
+    public static UserCollection createUser(){
+        UserCollection user= new UserCollection();
         user.setId(1l);
         user.setName("user instance");
         return user;
