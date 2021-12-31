@@ -9,7 +9,7 @@
         <property name="name" value="zhen"/>
         <property name="id" value="1"/>
         <property name="city" value="MOUNTAINVIEW"/>
-<!--        <property name="resource" value="classpath:/META-INF/user.properties"/>-->
+        <property name="resource" value="classpath:/META-INF/user.properties"/>
     </bean>
     <bean id="userCollection" class="com.fortinet.training.sf.domian.UserCollection"  primary="true" >
         <property name="name" value="zhen"/>
@@ -17,11 +17,11 @@
         <property name="city" value="MOUNTAINVIEW"/>
         <property name="workCities" value="MOUNTAINVIEW,SANJOSE"/>
 <!--        <property name="lifeCities" value="MOUNTAINVIEW,CUPERTINO"/>-->
-<!--        <property name="lifeCities">-->
-<!--            <list>-->
-<!--                <value>CUPERTINO</value>-->
-<!--            </list>-->
-<!--        </property>-->
+        <property name="lifeCities">
+            <list>
+                <value>CUPERTINO</value>
+            </list>
+        </property>
     </bean>
     <bean id="superUser" class="com.fortinet.training.sf.domian.SuperUser">
         <property name="name" value="zhen"/>

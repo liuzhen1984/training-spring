@@ -17,7 +17,7 @@ public class DependencyInjectionDemo {
         applicationContext.refresh();
 
         System.out.println(applicationContext.getBean(User.class));
-//        System.out.println(applicationContext.getBean(UserCollection.class));
+        System.out.println(applicationContext.getBean(UserCollection.class));
 
         applicationContext.close();
 

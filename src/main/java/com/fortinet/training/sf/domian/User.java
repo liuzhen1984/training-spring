@@ -8,7 +8,7 @@ public class User {
 
     private City city;
 
-//    private Resource resource;
+    private Resource resource;
 
     public Long getId() {
         return id;
@@ -34,13 +34,13 @@ public class User {
         this.city = city;
     }
 
-//    public Resource getResource() {
-//        return resource;
-//    }
-//
-//    public void setResource(Resource resource) {
-//        this.resource = resource;
-//    }
+    public Resource getResource() {
+        return resource;
+    }
+
+    public void setResource(Resource resource) {
+        this.resource = resource;
+    }
 
     @Override
     public String toString() {
@@ -48,7 +48,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", city=" + city +
-//                ", resource=" + resource +
+                ", resource=" + resource +
                 '}';
     }
 
