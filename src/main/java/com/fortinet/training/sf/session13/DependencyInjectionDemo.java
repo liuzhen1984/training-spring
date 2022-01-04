@@ -15,6 +15,10 @@ public class DependencyInjectionDemo {
         beanDefinitionReader.loadBeanDefinitions(xmlPath);
 
         applicationContext.refresh();
+        
+        
+        
+        
 
         System.out.println(applicationContext.getBean(User.class));
         System.out.println(applicationContext.getBean(UserCollection.class));
